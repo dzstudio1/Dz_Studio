@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ Studio · Histórias em Quadrinhos</title>
+    <meta name="description" content="DZ Studio — um estúdio criativo independente de histórias em quadrinhos autorais.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/art-direction.css">
+    <link rel="stylesheet" href="css/layout-fixes.css">
+    <link rel="stylesheet" href="css/legal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- ===== DECORAÇÕES ===== -->
+    <div class="deco-sticker deco-sticker-1" style="--rot:12deg">✦</div>
+    <div class="deco-sticker deco-sticker-2" style="--rot:-8deg">✧</div>
+    <div class="deco-sticker deco-sticker-3" style="--rot:25deg">🌸</div>
+    <div class="deco-sticker deco-sticker-4" style="--rot:-15deg">🌿</div>
+
+    <!-- ===== LOADING ===== -->
+    <div id="loading">
+        <div class="loading-content">
+            <span class="loading-icon">✦</span>
+            <span class="loading-text">DZ Studio</span>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logo/logo-nyex.png" alt="" class="nav-logo-img">
+                DZ<span>Studio</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#historias" class="nav-link">Histórias</a></li>
+                <li><a href="#personagens" class="nav-link">Personagens</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="#reservar" class="nav-link nav-btn">📖 Reservar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-card">
+            <div class="hero-content">
+                <div class="hero-badge">✦ Estúdio criativo independente</div>
+                <p class="hero-kicker">Histórias que ficam</p>
+                <h1 class="hero-title">DZ<span>Studio</span></h1>
+                <p class="hero-subtitle" id="heroSubtitle">Universos, personagens e histórias autorais — para quem acredita que o tempo é feito de pequenos momentos que valem a pena guardar.</p>
+                <div class="hero-buttons">
+                    <a href="#historias" class="btn btn-primary">Conhecer histórias <span>→</span></a>
+                    <a href="#reservar" class="btn btn-secondary">Reservar edição</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <img src="assets/images/hero-bg.jpg" alt="">
+                <span class="hero-sticker sticker-heart">♥</span>
+                <span class="hero-sticker sticker-star">✦</span>
+                <span class="hero-note">feito à mão<br>com carinho</span>
+            </div>
+        </div>
+        <div class="hero-caption"><span>01</span> Quadrinhos autorais e pequenos universos.</div>
+    </section>
+
+    <!-- ===== HISTÓRIAS ===== -->
+    <section class="section-stories" id="historias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📚 Nossas Histórias</span>
+                <h2 class="section-title">Explore os mundos que criamos</h2>
+                <p class="section-subtitle">Escolha uma história e mergulhe no universo dela.</p>
+            </div>
+            <div class="stories-grid" id="storiesGrid">
+                <!-- Preenchido pelo JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PERSONAGENS ===== -->
+    <section class="section-characters" id="personagens">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🌟 Personagens</span>
+                <h2 class="section-title">Conheça o universo de Entre Tempos</h2>
+                <p class="section-subtitle">Os protagonistas que habitam os mundos que criamos.</p>
+            </div>
+            <div class="characters-grid" id="charactersGrid">
+                <!-- Preenchido pelo JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="section-how" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📌 Como funciona</span>
+                <h2 class="section-title">Quatro passos simples</h2>
+            </div>
+            <div class="how-grid">
+                <div class="how-card reveal">
+                    <span class="how-number">1</span>
+                    <span class="how-icon">🔍</span>
+                    <h4>Escolha uma história</h4>
+                    <p>Explore nossos universos.</p>
+                </div>
+                <div class="how-card reveal" style="transition-delay:0.1s">
+                    <span class="how-number">2</span>
+                    <span class="how-icon">📖</span>
+                    <h4>Leia online</h4>
+                    <p>Acesse todos os capítulos.</p>
+                </div>
+                <div class="how-card reveal" style="transition-delay:0.2s">
+                    <span class="how-number">3</span>
+                    <span class="how-icon">📦</span>
+                    <h4>Reserve seu exemplar</h4>
+                    <p>Garanta sua cópia física.</p>
+                </div>
+                <div class="how-card reveal" style="transition-delay:0.3s">
+                    <span class="how-number">4</span>
+                    <span class="how-icon">📬</span>
+                    <h4>Receba novidades</h4>
+                    <p>Fique por dentro dos lançamentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section-about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-badge">✦ Sobre o Estúdio</span>
+                    <h2 class="section-title">Um espaço para contar histórias</h2>
+                    <p class="about-text" id="aboutText">DZ Studio nasceu da vontade de criar mundos onde as pessoas pudessem encontrar um pedaço de si mesmas. Somos um estúdio criativo independente, feito por poucas mãos e muito cuidado, dedicado a quadrinhos autorais que exploram tempo, amor, amizade e crescimento.</p>
+                    <div class="about-tags">
+                        <span class="about-tag">🎯 Missão: Conectar e inspirar</span>
+                        <span class="about-tag">💡 Propósito: Construir universos</span>
+                        <span class="about-tag">🌱 Visão: Referência em narrativas</span>
+                    </div>
+                </div>
+                <div class="about-author-box">
+                    <h4>Sobre o autor</h4>
+                    <p id="authorText">Danieruuz é um artista e contador de histórias que encontrou nos quadrinhos a forma mais autêntica de se expressar. Inspirado por slice of life, mangás e pela beleza dos dias comuns, ele cria mundos onde o tempo ganha significado através das conexões humanas.</p>
+                    <div class="author-sign">— DZ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEITOR DE CAPÍTULOS ===== -->
+    <section class="section-reader" id="sectionReader">
+        <div class="container">
+            <div class="reader-container" id="readerContainer">
+                <div class="reader-header">
+                    <button class="reader-back" id="readerBack">← Voltar para histórias</button>
+                    <h2 id="readerTitle">Entre Tempos</h2>
+                    <span id="readerChapter">Capítulo 1</span>
+                </div>
+                <div class="reader-pages" id="readerPages">
+                    <!-- Preenchido pelo JS com as imagens -->
+                </div>
+                <div class="reader-nav">
+                    <button class="reader-nav-btn" id="readerPrev">◀ Anterior</button>
+                    <span id="readerPageInfo">1 / 10</span>
+                    <button class="reader-nav-btn" id="readerNext">Próximo ▶</button>
+                </div>
+                
+                <!-- ===== ABA DE COMPRA ===== -->
+                <div class="reader-compra" id="readerCompra" style="display: none;">
+                    <div class="compra-box">
+                        <span class="compra-badge">📖 Fim da prévia</span>
+                        <h3>Quer continuar essa história?</h3>
+                        
+                        <p class="compra-texto">
+                            Você chegou ao fim da <strong>prévia</strong> deste capítulo. 
+                            Para continuar a história, você tem duas opções:
+                        </p>
+                        
+                        <div class="compra-opcoes">
+                            <!-- Opção 1: Karikari -->
+                            <div class="compra-item compra-item-destaque">
+                                <span class="compra-icone">📱</span>
+                                <div>
+                                    <h4>Ler online (completo)</h4>
+                                    <p>Acesse todos os capítulos na plataforma Karikari.</p>
+                                    <span class="compra-tag">Grátis</span>
+                                </div>
+                                <a href="https://karikari.com/@SEU_USUARIO" target="_blank" rel="noopener" class="btn btn-primary btn-small" style="width:100%;">
+                                    📖 Ler na Karikari
+                                </a>
+                            </div>
+                            
+                            <!-- Opção 2: Físico -->
+                            <div class="compra-item">
+                                <span class="compra-icone">📚</span>
+                                <div>
+                                    <h4>Versão física</h4>
+                                    <p>Leve a história para casa com você</p>
+                                </div>
+                                
+                                <div class="compra-sub-opcoes">
+                                    <div class="compra-sub-item">
+                                        <span>📘 A5</span>
+                                        <span class="compra-preco">R$ 8,00</span>
+                                        <button class="btn btn-primary btn-small compra-btn" onclick="abrirReserva('A5')">Reservar</button>
+                                    </div>
+                                    <div class="compra-sub-item">
+                                        <span>📙 A6</span>
+                                        <span class="compra-preco">R$ 6,00</span>
+                                        <button class="btn btn-primary btn-small compra-btn" onclick="abrirReserva('A6')">Reservar</button>
+                                    </div>
+                                </div>
+                                
+                                <p class="compra-entrega">
+                                    <span>📦 <strong>Entrega:</strong></span>
+                                    <span>Região escolar (Fazenda Rio Grande/PR) — <strong>eu levo pessoalmente</strong> 🚶</span>
+                                    <span>Outros estados — envio via <strong>Correios</strong> 📬</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="compra-obs">* Frete à parte para envios via Correios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESERVAR ===== -->
+    <section class="section-reserve" id="reservar">
+        <div class="container">
+            <div class="reserve-card reveal">
+                <span class="section-badge">📦 Reservar</span>
+                <h2 class="section-title">Garanta seu exemplar</h2>
+                <p>Quer ter uma cópia física das nossas histórias? Preencha o formulário abaixo e receba todas as informações sobre disponibilidade e envio.</p>
+                
+                <div class="reserve-info">
+                    <div class="reserve-item">
+                        <span class="reserve-icon">📖</span>
+                        <div>
+                            <h4>Obras disponíveis</h4>
+                            <p>Entre Tempos · Nós</p>
+                        </div>
+                    </div>
+                    <div class="reserve-item">
+                        <span class="reserve-icon">📐</span>
+                        <div>
+                            <h4>Formatos</h4>
+                            <p>A5 · A6</p>
+                        </div>
+                    </div>
+                    <div class="reserve-item">
+                        <span class="reserve-icon">💰</span>
+                        <div>
+                            <h4>Preços</h4>
+                            <p>A5: R$ 8,00 · A6: R$ 6,00</p>
+                        </div>
+                    </div>
+                    <div class="reserve-item">
+                        <span class="reserve-icon">📦</span>
+                        <div>
+                            <h4>Entrega</h4>
+                            <p>Estados - Fazenda Rio Grande/PR: <strong>presencial</strong> 🚶</p>
+                            <p>Outros estados: <strong>Correios</strong> 📬</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="reserve-form" id="reserveForm" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reserveName">Seu nome *</label>
+                            <input type="text" id="reserveName" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="reserveEmail">Seu email *</label>
+                            <input type="email" id="reserveEmail" name="email" required placeholder="Digite seu email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reserveStory">Qual história você quer reservar?</label>
+                        <select id="reserveStory" name="story">
+                            <option value="Entre Tempos">Entre Tempos</option>
+                            <option value="Nós">Nós</option>
+                            <option value="Ambas">Ambas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reserveFormat">Qual formato?</label>
+                        <select id="reserveFormat" name="format">
+                            <option value="A5 - R$ 8,00">A5 - R$ 8,00</option>
+                            <option value="A6 - R$ 6,00">A6 - R$ 6,00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reserveCity">Sua cidade *</label>
+                        <input type="text" id="reserveCity" name="city" required placeholder="Ex: Fazenda Rio Grande - PR">
+                    </div>
+                    <div class="form-group">
+                        <label for="reserveMessage">Alguma observação?</label>
+                        <textarea id="reserveMessage" name="message" placeholder="Ex: quero os dois formatos, sou da região escolar..."></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="Nova reserva - DZ Studio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <label class="form-consent">
+                        <input type="checkbox" name="privacy_consent" required>
+                        <span>Li e concordo com o uso dos meus dados para responder a esta reserva, conforme a <a href="#privacidade">política de privacidade</a>.</span>
+                    </label>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">📦 Quero reservar</button>
+                    <div class="form-success" id="reserveSuccess">✅ Reserva enviada! Em breve entraremos em contato. 💚</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section-contact" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📬 Conecte-se</span>
+                <h2 class="section-title">Fale com a gente</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-social">
+                    <h3>Redes sociais</h3>
+                    <div class="social-grid" id="socialGrid">
+                        <!-- Preenchido pelo JS -->
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <h3>Envie uma mensagem</h3>
+                    <form id="contactForm" action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="contactName">Seu nome *</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Seu email *</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Mensagem *</label>
+                            <textarea id="contactMessage" name="message" required placeholder="O que você gostaria de saber?"></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="Novo contato - DZ Studio">
+                        <input type="hidden" name="_captcha" value="false">
+                        <label class="form-consent">
+                            <input type="checkbox" name="privacy_consent" required>
+                            <span>Li e concordo com o uso dos meus dados para responder a esta mensagem, conforme a <a href="#privacidade">política de privacidade</a>.</span>
+                        </label>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">✉️ Enviar mensagem</button>
+                        <div class="form-success" id="contactSuccess">✅ Mensagem enviada! Responderemos em breve. 💚</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">✦ DZ Studio · Todos os direitos reservados ✦</p>
+            <div class="footer-links-small">
+                <a href="#historias">Histórias</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#reservar">Reservar</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <p class="footer-year" id="footerYear">2026</p>
+            <div class="footer-legal" id="privacidade">
+                <p><strong>Direitos autorais:</strong> todas as histórias, ilustrações e personagens do DZ Studio são obras autorais protegidas. Não é permitido reproduzir, redistribuir ou utilizar este material sem autorização.</p>
+                <p><strong>Privacidade:</strong> os dados enviados pelos formulários são usados somente para responder ao seu contato ou reserva e não são vendidos nem compartilhados para fins publicitários. Para solicitar a correção ou exclusão dos dados, entre em contato pelas redes do estúdio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÃO TEMA ===== -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span id="themeIcon">🌙</span>
+    </button>
+
+    <!-- ===== MODAL DE PRÉVIA ===== -->
+    <div class="modal-overlay" id="previaModal">
+        <div class="modal-content modal-grande">
+            <button class="modal-close" id="modalClose">✕</button>
+            
+            <div class="modal-banner-container">
+                <img id="modalBanner" src="" alt="Banner" class="modal-banner">
+            </div>
+            
+            <div class="modal-body">
+                <span class="modal-emoji" id="modalEmoji">📖</span>
+                <h2 id="modalTitle">Entre Tempos</h2>
+                <div class="modal-genre" id="modalGenre">Slice of Life · Drama</div>
+                <p id="modalDescription">Uma história sobre tempo, amizade e crescimento.</p>
+                
+                <div class="modal-capitulos" id="modalCapitulos">
+                    <!-- Preenchido pelo JS -->
+                </div>
+            </div>
+            
+            <button class="btn btn-secondary" id="modalFecharBtn" style="margin: 0 2rem 1.5rem;">Fechar</button>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/main.js"></script>
+</body>
+</html>
